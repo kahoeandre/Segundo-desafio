@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 41rem;
+    height: 30rem;
+    margin: 14rem auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.imagens {
+    height: 100%;
+    width: 20rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.imagens-mobile {
+    display: none;
+}
+
+h2 {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.4rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-left: 2rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.4rem;
+    margin-right: 3.7rem;
+}
+
+b {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+    margin-left: 2rem;
+}
+
+sup {
+    margin-left: 2rem;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+}
+
+.botao {
+    color: white;
+    font-family: 'Fraunces', serif;
+    background-color: hsl(158, 36%, 37%);
+    margin-top: 2rem;
+    padding: 17px 80px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    margin-left: 2rem;
+    border-style: none;
+    gap: 0.7rem;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: hsl(158, 39%, 21%)
+}
+
+@media (max-width:700px) {
+    .container {
+        flex-direction: column;
+        max-width: 90%;
+        margin-top: 1.5rem;
+        height: auto;
+        margin-bottom: 1px;
+    }
+    .imagens {
+        display: none;
+    }
+    .imagens-mobile {
+        display: block;
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 25px;
+    }
+    .texto {
+        margin-bottom: 30px;
+    }
+    .botao {
+        padding: 3% 26%;
+    }
+}
